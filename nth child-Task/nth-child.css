@@ -1,0 +1,131 @@
+/*-------------!!! task one !!!--------------*/
+.box1 .odd{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border: 1px solid;
+}
+.box1 .even{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border: 1px solid;
+}
+.box1 div:nth-child(odd){
+    margin-bottom: 20px;
+}
+.box1 div:nth-child(even){
+    margin-bottom: 10px;
+}
+/*-------------!!! task one !!!--------------*/
+
+
+/*-------------!!! task two !!!--------------*/
+.box2 div{
+    display:inline-block ;
+    text-align: center;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    width: 40px;
+    height: 20px;
+}
+.box2 div:nth-child(even){
+    display: none;
+
+}
+/*-------------!!! task two !!!--------------*/
+
+
+/*-------------!!! task three !!!--------------*/
+
+
+.box3 div{
+    display: inline-block;
+}
+
+.box3 div::after{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    content: "+";
+    text-align: left;
+    font-size: small;
+}
+
+
+.box3 div:nth-child(n+4):nth-child(-n+6)::after{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    content: "x";
+    text-align: left;
+    font-size: small;
+}
+.box3 div:nth-child(n+10):nth-child(-n+12)::after{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    content: "x";
+    text-align: left;
+    font-size: small;
+}
+.box3 div:nth-child(n+16):nth-child(-n+18)::after{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    content: "x";
+    text-align: left;
+    font-size: small;
+}
+.box3 div:nth-child(n+22):nth-child(-n+24)::after{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    content: "x";
+    text-align: left;
+    font-size: small;
+}
+
+/*-------------!!! task three !!!--------------*/
+
+
+/*-------------!!! task four !!!--------------*/
+.box4 div div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(189, 189, 246);
+    border: 1px solid;
+
+}
+.q1 div:nth-child(n+6):nth-child(-n+10){
+    background-color: orange;
+
+}
+.q2 div:nth-child(n):nth-child(-n+5){
+    background-color: orange;
+
+}
+.q3 div:nth-child(4n-3){
+    background-color: orange;
+
+}
+.q4 div:nth-last-child(n):nth-last-child(-n+5){
+    background-color: orange;
+
+}
+.q5 div:nth-child(n+2):nth-child(-n+10){
+    background-color: orange;
+
+}
+/*-------------!!! task four !!!--------------*/
+

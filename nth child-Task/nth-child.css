@@ -56,6 +56,15 @@
     text-align: left;
     font-size: small;
 }
+/* .box3 div:nth-child(3n + 1), .box3 div:nth-child(3n + 2), .box3 div:nth-child(3n + 3)::after{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    content: "x";
+    text-align: left;
+    font-size: small;
+} */
 
 
 .box3 div:nth-child(n+4):nth-child(-n+6)::after{
@@ -128,4 +137,22 @@
 
 }
 /*-------------!!! task four !!!--------------*/
+
+/*-------------!!! Extra task !!!--------------*/
+.Extra div{ 
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    border: 1px solid;
+    text-align: center;
+    margin: 1px;
+}
+
+.Extra div:hover{
+    background-color: rgb(152, 244, 61);
+}
+
+
+/*-------------!!! Extra task !!!--------------*/
 
